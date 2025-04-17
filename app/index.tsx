@@ -19,18 +19,20 @@ export default function index() {
 
   useEffect(() => {
 
-    if (Platform.OS === 'web') {
-    // firebase.initializeApp({
-    //   databaseURL: "https://firebase-app-b8cd7-default-rtdb.firebaseio.com",
-    //   apiKey: "AIzaSyB3IDzBIH3qIBmNOGfxPcX0TaRd9KLnQHM",
-    //   authDomain: "firebase-app-b8cd7.firebaseapp.com",
-    //   projectId: "firebase-app-b8cd7",
-    //   storageBucket: "firebase-app-b8cd7.appspot.com",
-    //   messagingSenderId: "206051169329",
-    //   appId: "1:206051169329:ios:1f5d3b5f0831d7c3f80fc9",
-    // });
+
+    // for web client id
+    // if (Platform.OS === 'web') {
+    // // firebase.initializeApp({
+    // //   databaseURL: "https://firebase-app-b8cd7-default-rtdb.firebaseio.com",
+    // //   apiKey: "AIzaSyB3IDzBIH3qIBmNOGfxPcX0TaRd9KLnQHM",
+    // //   authDomain: "firebase-app-b8cd7.firebaseapp.com",
+    // //   projectId: "firebase-app-b8cd7",
+    // //   storageBucket: "firebase-app-b8cd7.appspot.com",
+    // //   messagingSenderId: "206051169329",
+    // //   appId: "1:206051169329:ios:1f5d3b5f0831d7c3f80fc9",
+    // // });
     
-    }
+    // }
 
     const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
     return subscriber; // unsubscribe on unmount
